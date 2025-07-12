@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import {Button, Layout, theme} from "antd";
 import {MenuFoldOutlined, MenuUnfoldOutlined} from "@ant-design/icons";
 import './HomePage.css';
-import Navigation from "../components/Navigation";
-import HomeRoutes from "../components/HomeRoutes";
+import Navigation from "@/components/Navigation";
+import HomeRoutes from "@/components/HomeRoutes";
 
 const HomePage: React.FC = () => {
   const [collapsed, setCollapsed] = useState(false);

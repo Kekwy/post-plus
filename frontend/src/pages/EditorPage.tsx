@@ -1,13 +1,12 @@
 // import { EditorProvider, FloatingMenu, BubbleMenu } from '@tiptap/react'
 // import StarterKit from '@tiptap/starter-kit'
 
-import { SimpleEditor } from "@/components/tiptap-templates/simple/simple-editor";
+import {SimpleEditor} from "@/components/tiptap-templates/simple/simple-editor";
 
 // // define your extension array
 // const extensions = [StarterKit]
 
 // const content = '<p>Hello World!</p>'
-
 
 
 const EditorPage = () => {
@@ -17,7 +16,11 @@ const EditorPage = () => {
   //     <BubbleMenu editor={null}>This is the bubble menu</BubbleMenu>
   //   </EditorProvider>
   // )
-  return <SimpleEditor />
+  return (
+    <div style={{width: '100%'}}>
+      <SimpleEditor/>
+    </div>
+  )
 }
 
 export default EditorPage;
