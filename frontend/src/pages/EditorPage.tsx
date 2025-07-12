@@ -1,7 +1,7 @@
 // import { EditorProvider, FloatingMenu, BubbleMenu } from '@tiptap/react'
 // import StarterKit from '@tiptap/starter-kit'
 
-import { SimpleEditor } from "../@/components/tiptap-templates/simple/simple-editor";
+import { SimpleEditor } from "@/components/tiptap-templates/simple/simple-editor";
 
 // // define your extension array
 // const extensions = [StarterKit]

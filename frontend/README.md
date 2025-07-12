@@ -49,3 +49,5 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 npm install
 
 npx @tiptap/cli add simple-editor
+
+核心和 ui 实现可以是两个产品
