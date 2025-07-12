@@ -1,14 +1,9 @@
-// src/pages/NewPage.tsx
 import React, {useState} from 'react';
-import {Button, Layout, Menu, theme} from "antd";
-import {
-  MenuFoldOutlined,
-  MenuUnfoldOutlined,
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined
-} from "@ant-design/icons";
-import './Home.css';
+import {Button, Layout, theme} from "antd";
+import {MenuFoldOutlined, MenuUnfoldOutlined} from "@ant-design/icons";
+import './HomePage.css';
+import Navigation from "../components/Navigation";
+import HomeRoutes from "../components/HomeRoutes";
 
 const HomePage: React.FC = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -27,28 +22,7 @@ const HomePage: React.FC = () => {
     <Layout style={containerStyle}>
       <Sider trigger={null} collapsible collapsed={collapsed}>
         <div className="demo-logo-vertical"/>
-        <Menu
-          theme="dark"
-          mode="inline"
-          defaultSelectedKeys={['1']}
-          items={[
-            {
-              key: '1',
-              icon: <UserOutlined/>,
-              label: 'nav 1',
-            },
-            {
-              key: '2',
-              icon: <VideoCameraOutlined/>,
-              label: 'nav 2',
-            },
-            {
-              key: '3',
-              icon: <UploadOutlined/>,
-              label: 'nav 3',
-            },
-          ]}
-        />
+        <Navigation/>
       </Sider>
       <Layout>
         <Header style={{padding: 0, background: colorBgContainer, display: "flex"}}>
@@ -72,7 +46,7 @@ const HomePage: React.FC = () => {
             borderRadius: borderRadiusLG,
           }}
         >
-          Content
+          <HomeRoutes/>
         </Content>
       </Layout>
     </Layout>

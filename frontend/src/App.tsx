@@ -4,7 +4,7 @@ import './App.css';
 import {Button, ConfigProvider} from "antd";
 import {createStyles} from 'antd-style';
 import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
-import HomePage from "./page/Home";
+import HomePage from "./pages/HomePage";
 
 const useStyle = createStyles(({prefixCls, css}) => ({
   linearGradientButton: css`
@@ -66,8 +66,8 @@ function App() {
                 </header>
               }
             />
-            {/* 新页面路由 */}
-            <Route path="/home" element={<HomePage/>}/>
+            {/* HomePage 及其子路由 */}
+            <Route path="/home/*" element={<HomePage/>}/> {/* 注意 /* 通配符 */}
           </Routes>
         </div>
       </Router>
